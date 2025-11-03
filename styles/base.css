@@ -17,16 +17,15 @@
 #course-title {
     display: block;
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
     color: var(--font-primary-color);
-    padding: 3rem 2rem 2rem;
-    margin: 1rem;
+    padding: 3rem 1rem 2rem;
 }
 
 .division {
     background-color: var(--primary-color);
-    height: 3rem;
+    height: 1.5rem;
 }
 
 nav {
@@ -49,7 +48,7 @@ nav ul {
 a {
     text-decoration: none;
     color: var(--font-primary-color);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -65,7 +64,12 @@ main {
     display: grid;
     grid-template-columns: 2.4fr 4fr 1.75fr;
     max-width: 90%;
-    margin: 3rem auto;
+    margin: 1.5rem auto 3rem;
+}
+
+.welcome {
+    font-size: 35px;
+    margin-bottom: 2rem;
 }
 
 .profile {
@@ -84,7 +88,7 @@ main {
 
 .name-card h1 {
     color: var(--font-primary-color);
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .card {
@@ -92,10 +96,11 @@ main {
     padding: 1.5rem;
     max-width: 100%;
     border-radius: 0.4rem;
+    margin: 1rem;
 }
 
 .card h1 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 1rem;
 }
 
@@ -104,8 +109,8 @@ main {
 }
 
 .about p {
-    font-size: 24px;
-    padding-bottom: 1.4rem;
+    font-size: 20px;
+    padding-bottom: 0.8rem;
 }
 
 .right-cards h1 {
@@ -115,17 +120,18 @@ main {
 }
 
 .right-cards p {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--font-primary-color);
 }
 
 .right-cards h2 {
     margin-bottom: 0.3rem;
     color: var(--font-primary-color);
+    font-size: 22px;
 }
 
 .email, .phone, .location {
-    margin-bottom: 1rem;
+    margin: 0 16px 16px ;
     background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 0.5rem;
@@ -138,12 +144,12 @@ main {
 footer {
     border-top: 1px solid lightgray;
     text-align: center;
-    font-size: 24px;
-    margin-top: 4rem;
+    font-size: 18px;
+    margin-top: 1.5rem;
 }
 
 footer p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 section {
@@ -164,7 +170,7 @@ section {
 .pic-overlay2 {
     width: 190px;
     top: -80px;
-    right: -25px;
+    right: -50px;
 }
 
 .pic-overlay3 {
