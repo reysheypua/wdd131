@@ -14,6 +14,10 @@
     color: var(--font-primary-color);
 }
 
+header {
+    margin: 0;
+}
+ 
 #course-title {
     display: block;
     width: 100%;
@@ -64,7 +68,12 @@ main {
     display: grid;
     grid-template-columns: 2.4fr 4fr 1.75fr;
     max-width: 90%;
-    margin: 1.5rem auto 3rem;
+    margin: 0 auto 3rem;
+}
+
+main h1 {
+    grid-column: 1/3;
+    margin: 2rem 2rem;
 }
 
 .welcome {
@@ -83,7 +92,7 @@ main {
     background-color: var(--primary-color);
     padding: 1.5rem;
     border-radius: 0.4rem;
-    margin-bottom: 1rem;
+    margin:  0 1rem 1rem;
 }
 
 .name-card h1 {
