@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #b5ecff;
+    --secondary-color: rgb(255, 249, 199);
+    --font-primary-color:   #2c6487;
+    --border-color: rgb(231, 231, 231);
+}
+
+* {
+    margin: 0 2rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', Tahoma, 'Geneva', Verdana, sans-serif;
+    letter-spacing: 1.5px;
+    color: var(--font-primary-color);
+}
+
+#course-title {
+    display: block;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--font-primary-color);
+    padding: 3rem 2rem 2rem;
+    margin: 1rem;
+}
+
+.division {
+    background-color: var(--primary-color);
+    height: 3rem;
+}
+
+nav {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: 1 / 4;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    margin: 1rem 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-primary-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2.4fr 4fr 1.75fr;
+    max-width: 90%;
+    margin: 3rem auto;
+}
+
+.profile {
+    grid-column: 1/2;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.name-card {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.name-card h1 {
+    color: var(--font-primary-color);
+    font-size: 28px;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    max-width: 100%;
+    border-radius: 0.4rem;
+}
+
+.card h1 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.about {
+    margin: 0;
+}
+
+.about p {
+    font-size: 24px;
+    padding-bottom: 1.4rem;
+}
+
+.right-cards h1 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: var(--font-primary-color);
+}
+
+.right-cards p {
+    font-size: 24px;
+    color: var(--font-primary-color);
+}
+
+.right-cards h2 {
+    margin-bottom: 0.3rem;
+    color: var(--font-primary-color);
+}
+
+.email, .phone, .location {
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.left-cards, .right-cards {
+    margin: 0;
+}
+
+footer {
+    border-top: 1px solid lightgray;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+section {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.pic-overlay1, .pic-overlay2, .pic-overlay3 {
+    position: absolute;
+}
+
+.pic-overlay1 {
+    width: 175px;
+    top: -125px;
+    right: 1px;
+}
+
+.pic-overlay2 {
+    width: 190px;
+    top: -80px;
+    right: -25px;
+}
+
+.pic-overlay3 {
+    width: 235px;
+    top: -100px;
+    right: -40px;
+}
