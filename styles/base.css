@@ -6,7 +6,7 @@
 }
 
 * {
-    margin: 0 2rem;
+    margin: 0 1rem;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lora', Tahoma, 'Geneva', Verdana, sans-serif;
@@ -66,8 +66,8 @@ a:hover{
 
 main {
     display: grid;
-    grid-template-columns: 2.4fr 4fr 1.75fr;
-    max-width: 90%;
+    grid-template-columns: 2fr 3.5fr 3fr;
+    max-width: 95%;
     margin: 0 auto 3rem;
 }
 
@@ -113,6 +113,22 @@ main h1 {
     margin-bottom: 1rem;
 }
 
+.socmed {
+    display: flex;
+    flex-direction: column;
+    width: ;
+    height: fit-content;
+    padding: 2rem;
+    grid-column: 1/2;
+}
+
+.socmed a {
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
 .about {
     margin: 0;
 }
@@ -133,21 +149,24 @@ main h1 {
     color: var(--font-primary-color);
 }
 
-.right-cards h3 {
-    margin-bottom: 0.3rem;
-    color: var(--font-primary-color);
-    font-size: 22px;
-}
+.cebu {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto 2rem;
 
-.email, .phone, .location {
-    margin: 0 16px 16px ;
-    background-color: var(--primary-color);
-    padding: 1rem;
-    border-radius: 0.5rem;
 }
 
 .left-cards, .right-cards {
     margin: 0;
+    grid-row: 2/4;  
+}
+
+.left-cards {
+    grid-column: 2/3;
+}
+
+.right-cards {
+    grid-column: 3/4;
 }
 
 footer {
@@ -183,7 +202,7 @@ section {
 }
 
 .pic-overlay3 {
-    width: 235px;
+    width: 175px;
     top: -100px;
-    right: -40px;
+    right: -70px;
 }
