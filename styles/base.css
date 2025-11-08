@@ -113,16 +113,15 @@ main h1 {
     margin-bottom: 1rem;
 }
 
-.socmed {
+.resources {
     display: flex;
     flex-direction: column;
-    width: ;
     height: fit-content;
     padding: 2rem;
     grid-column: 1/2;
 }
 
-.socmed a {
+.resources a {
     margin: 0.5rem 1rem;
     padding: 0.5rem;
     background-color: var(--primary-color);
