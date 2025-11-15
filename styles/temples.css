@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #b5ecff;
+    --secondary-color: rgb(255, 249, 199);
+    --font-primary-color: #2c6487;
+    --border-color: rgb(231, 231, 231);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', Tahoma, 'Geneva', Verdana, sans-serif;
+    letter-spacing: 0.5px;
+    color: var(--font-primary-color);
+}
+
+#menuButton {
+    position: absolute; 
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: var(--font-primary-color); 
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav-closed, nav:not(.nav-open) {
+    display: none;
+}
+
+.nav-open {
+    display: flex;
+    flex-direction: column; 
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: inherit;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav a {
+    text-align: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav a:hover {
+    background-color: var(--font-primary-color);
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 0.5rem 0;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    color: var(--font-primary-color);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}

@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px) {
+
+    #menuButton {
+        display: none;
+    }
+
+    nav, nav.nav-open {
+        display: flex !important;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        flex-direction: row;
+        border-bottom: none;
+        justify-content: flex-end; 
+    }
+    
+    nav a {
+        padding: 0.5rem 1rem;
+        border-bottom: none;
+        border-left: 1px solid var(--border-color);
+        color: var(--font-primary-color); 
+    }
+
+    main {
+        display: grid;
+        padding: 1rem 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    main h1 {
+        grid-column: 1 / -1;
+    }
+
+    figure {
+        padding: 1rem;
+    }
+}
