@@ -14,27 +14,6 @@
     color: var(--font-primary-color);
 }
 
-#menuButton {
-    position: absolute; 
-    top: 1rem;
-    right: 1rem;
-    background: transparent;
-    border: none;
-    color: var(--font-primary-color); 
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.nav-closed, nav:not(.nav-open) {
-    display: none;
-}
-
-.nav-open {
-    display: flex;
-    flex-direction: column; 
-}
-
 body {
     background-color: white;
 }
@@ -81,16 +60,35 @@ nav a:hover {
     color: white;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
+
+#menuButton {
+    position: absolute; 
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: var(--font-primary-color); 
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav-closed, nav:not(.nav-open) {
+    display: none;
+}
+
+.nav-open {
+    display: flex;
+    flex-direction: column; 
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 figure {
@@ -116,7 +114,7 @@ figcaption {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--font-primary-color);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
