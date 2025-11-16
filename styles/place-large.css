@@ -72,15 +72,19 @@
 
     .weather-section h2 {
         background-color: var(--primary-color);
+        margin: calc(var(--padding-base) * -1); 
+        margin-bottom: var(--padding-base);
+        padding: 0.5rem var(--padding-base);
         border-radius: 6px 6px 0 0;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
         color: var(--font-primary-color);
         text-align: left;
-        height: 60px;
     }
 
     .data-section h2 {
         background-color: var(--primary-color);
-        justify-content: left;
     }
 
     .weather-data,
@@ -104,10 +108,6 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
     }
 
-    .weather-icon {
-        visibility: hidden;
-    }
-
     section h2 {
         text-align: left;
         color: var(--font-primary-color);
@@ -119,6 +119,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .weather-icon {
+        width: 25px;
+        height: 25px;
+        margin-left: 0.5rem;
+        display: block; 
+    }
+
+    .weather-section h2::after {
+        content: none !important;
+    }
+
+    section h2 img.weather-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 0.5rem;
     }
     
     footer p {
