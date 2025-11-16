@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Reyshey Keena Pua | This is a country page where I live, have visited, or wish to visit.">
+    <meta name="author" content="Reyshey Keena Pua">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cebu</h1>
+    </header>
+
+    <main>
+        
+        <picture class="hero-image">
+            <source media="(min-width: 768px)" srcset="images/cebu-philippines-large.webp">
+            <img src="images/cebu-philippines-medium.webp" alt="Placeholder image of the chosen place." loading="lazy">
+        </picture>
+        
+        <section class="data-section">
+            <h2>Data</h2>
+            <div class="data-row">
+                <span class="label">Area:</span>
+                <span class="value">4,944 sq km</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Population:</span>
+                <span class="value">3.4 million</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Capital:</span>
+                <span class="value">Cebu City</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Languages:</span>
+                <span class="value">Cebuano, Filipino, English</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Currency:</span>
+                <span class="value">Philippine Pesos</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Time Zone:</span>
+                <span class="value">UTC +8</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Calling Code:</span>
+                <span class="value">+63</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Internet TLD:</span>
+                <span class="value">.ph</span>
+            </div>
+        </section>
+        
+        <section class="weather-section">
+            <h2>
+                Weather
+                <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
+            </h2>
+
+            <div class="weather-data">
+                <div class="data-row">
+                    <span class="label">Temperature:</span>
+                    <span class="value" id="temp-static">27°C</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Conditions:</span>
+                    <span class="value" id="weather-condition">Rain/Heavy Thunderstorm is expected</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Wind:</span>
+                    <span class="value" id="wind">10 mph</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Heat Index:</span>
+                    <span class="value">31°C</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Your Name | Location</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
