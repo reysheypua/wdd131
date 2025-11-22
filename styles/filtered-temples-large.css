@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        background-color: var(--secondary-color);
+        border-bottom: none;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-bottom: none;
+        border-left: 1px solid var(--border-color);
+    }
+
+    nav a:hover {
+        background-color: var(--font-primary-color);
+        color: white;
+    }
+
+    .res-grid { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2rem;
+    }
+
+    main {
+        padding: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    section {
+        padding: 1rem;
+        background-color: var(--secondary-color);
+    }
+
+    section img {
+        width: 400px;
+        height: 250px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+    }
+}
