@@ -108,3 +108,7 @@ a:hover {
     display: block;
     width: 40%;
 }
+
+.section-box .mobile-img {
+    width: 20%;
+}
