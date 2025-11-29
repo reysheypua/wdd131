@@ -110,5 +110,6 @@ a:hover {
 }
 
 .section-box .mobile-img {
-    width: 20%;
+    max-width: 20%;
+    width: 100%;
 }
