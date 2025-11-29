@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #264653;
+    --secondary-color: #F7EDE2;
+    --accent1-color: #E76F51;
+    --accent2-color: #2A9D8F;
+    --text-color: #1A1A1A;
+
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins', sans-serif;
+    --code-font: 'Roboto Mono', monospace;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: var(--accent2-color);
+    border-bottom: 2px solid var(--accent2-color);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: var(--accent1-color);
+    font-size: 1.3em;
+}
+
+.section-box {
+    background-color: #FFFFFF;
+    padding: 1rem 3rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wireframe {
+    justify-items: center;
+}
+
+a {
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.color-sample {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--text-color);
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+/* Specific styling for font examples */
+.font-example-heading {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+.font-example-body {
+    font-family: var(--body-font);
+    font-weight: 400;
+}
+
+.font-example-code {
+    font-family: var(--code-font);
+    font-weight: 400;
+    background-color: #EFEFEF;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.section-box img {
+    display: block;
+    width: 40%;
+}
