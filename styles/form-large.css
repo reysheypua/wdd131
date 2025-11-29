@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px) {
+
+    main {
+        max-width: 900px;
+        padding: 30px;
+    }
+
+    form {
+        gap: 30px;
+    }
+
+    fieldset {
+        padding: 25px;
+        font-size: 1.1rem;
+    }
+
+    legend {
+        font-size: 1.3rem;
+    }
+
+    .rating-group {
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .rating-item {
+        font-size: 2em;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .submit-btn {
+        font-size: 1.2rem;
+        padding: 18px 24px;
+    }
+}

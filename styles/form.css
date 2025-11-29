@@ -84,24 +84,23 @@ textarea {
 .rating-group {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: -10px;
     width: 100%;
+    padding: 10px;
 }
 
 .rating-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: var(--text-color);
 }
 
-.rating-item label {
-    font-size: 1.5em;
-    cursor: pointer;
-    color: var(--text-color);
-    margin-bottom: 5px;
-    transition: color 0.3s;
+.rating-item input {
+    margin-top: 5px;
 }
+
 .checkbox-group {
     display: flex;
     flex-direction: column;
