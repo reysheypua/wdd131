@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | The Gamification Lab</title>
+        <meta name="description" content="Analyzing the psychology behind gamification: how design elements motivate behavior in apps and life.">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/styles-mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="scripts/script.js"></script>
+    </head>
+    <body>
+        <header class="page-header">
+            <a href="index.html" class="logo-link">The Gamification Lab</a>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="mechanics.html">Mechanics</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="references.html">References</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="content-box hero-layout">
+                <div class="hero-text">
+                    <h1>The Engagement Engine: Decoding Gamification Psychology</h1>
+                    <p>The Gamification Lab is your resource for understanding the design elements, psychological triggers, and ethical implications of applying game principles to non-game contexts like education, health, and business. Learn how to design for motivation and how to recognize when you're being motivated.</p>
+                    <p id="submission-count-message" class="submission-message">Loading submission count...</p>
+                </div>
+                
+                <!-- Featured Case Study: Interactive Progress Bar Demo -->
+                <div class="hero-featured-box">
+                    <div class="onboarding-demo">
+                        <div class="step-label" id="step-label">Step 1: Welcome to the Lab!</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%;"></div>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4">A powerful mechanic exploiting the Zeigarnik Effect.</p>
+                        <button class="demo-button" id="next-step-button">Complete Step (0%)</button>
+                        <button class="demo-button" id="reset-button" style="display: none;">Reset</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Content Cards -->
+            <section class="card-grid">
+                <article class="content-card">
+                    <h2>Core Psychological Triggers</h2>
+                    <p>Explore the psychological theories behind points, progress bars, and loss aversion. Learn "how" systems can motivate you.</p>
+                    <a href="mechanics.html" class="button">Read More</a>
+                </article>
+
+                <article class="content-card">
+                    <h2>Real-World Case Studies</h2>
+                    <p>See gamification in action. Detailed analysis of systems like Duolingo, fitness trackers, and corporate learning platforms.</p>
+                    <a href="case-studies.html" class="button">View Cases</a>
+                </article>
+
+                <article class="content-card">
+                    <h2>Ethical Design & Dark Patterns</h2>
+                    <p>Understand "Dark Patterns" and how to identify manipulative design versus beneficial motivational systems that drive positive change.</p>
+                    <a href="mechanics.html#ethics" class="button">Learn Ethics</a>
+                </article>
+            </section>
+
+            <!-- HTML Form / Call to Action -->
+            <section class="cta-section">
+                <h2>Submit Your Gamification Experience</h2>
+                <p>Do you have a great example of gamification, or a bad one? Share it with the Lab!</p>
+                
+                <!-- Rubric 8: HTML Form -->
+                <form id="user-submit-form" action="#" method="POST">
+                    <label for="submit-name">Your Name:</label>
+                    <input type="text" id="submit-name" name="name" required>
+
+                    <label for="submit-email">Your Email:</label>
+                    <input type="email" id="submit-email" name="email" required>
+
+                    <label for="submit-example">Gamification Example / Question:</label>
+                    <textarea id="submit-example" name="example" rows="4" required></textarea>
+
+                    <button type="submit" id="submit-button">SUBMIT</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 The Gamification Lab | Reyshey Keena Pua | <a href="references.html">References</a></p>
+        </footer> 
+    </body>
+</html>
