@@ -4,7 +4,10 @@
         align-items: flex-start;
         padding-bottom: 10px;
     }
-
+    
+    h1 {
+        font-size: 2rem;
+    }
     nav {
         margin-top: 10px;
         width: 100%;
